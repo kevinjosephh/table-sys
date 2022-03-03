@@ -5,7 +5,8 @@
 
 this will display all tables available and show number of seats they hold i.e 2, 4, 6 or 12.
 
-![1](https://user-images.githubusercontent.com/38029772/156491301-09cbf6f5-8c7f-4bf3-8c93-a51a87cbc4e6.png)
+![6](https://user-images.githubusercontent.com/38029772/156493160-ebaa7550-3336-4e33-9b29-81204b56f1d4.png)
+
 
 ### Book a Table
 
