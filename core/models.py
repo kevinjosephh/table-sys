@@ -19,3 +19,7 @@ class Table(models.Model):
 			('Empty', 'Empty'),
 			)
     status=models.CharField(max_length=200, null=True, choices=STATUS)
+
+class Reservation(models.Model):
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    table = models.ForeignKey(Table, on_delete=models.SET_NULL, null=True)

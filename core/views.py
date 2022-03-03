@@ -20,7 +20,7 @@ def booktable(request,id):
     if table:
         if table.status == "Empty":
             endtime = time(23, 00, 00, 000000)
-            starttime= time(1, 00, 00, 000000)
+            starttime= time(17, 00, 00, 000000)
             t=datetime.now().time()
             if endtime >= t >= starttime:
                 if (datetime.now() >= table.time + timedelta(minutes=10)):
@@ -33,7 +33,7 @@ def booktable(request,id):
                     data=f"This table is being cleaned, try another table or wait for {table.time+timedelta(minutes=10) - datetime.now() }"
                     return Response(data)
             else:
-                data= f"You can only book between 5pm to 11pm.current time is {t}"
+                data= f"You can only book between 3am to 11pm.current time is {t}"
                 return Response(data)
         else:
             data = "Table is Occupied"
@@ -50,7 +50,7 @@ def cleartable(request,id):
             table.status = "Empty"
             table.time = datetime.now()
             table.save()
-            data = "Table Cleared"
+            data = "Table Empty"
             return Response(data)
         else:
             data="It is already empty"
