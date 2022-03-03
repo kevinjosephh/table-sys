@@ -4,4 +4,4 @@ from . models import *
 class TableSerializer(ModelSerializer):
     class Meta:
         model = Table
-        fields = '__all__'
+        fields = ['id', 'seats', 'status']
