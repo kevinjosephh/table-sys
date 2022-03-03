@@ -1,7 +1,9 @@
 # table-sys
 
 --> Tables can hold either 2, 4, 6, 12 customers
+
 --> Reservations can occur between 5 pm to 11 pm
+
 --> Cleaning and seating tables require 10 minutes between customers
 
 to get a overview of working <a href="https://github.com/kevinjosephh/table-sys/blob/master/Overview.md">click here</a>
